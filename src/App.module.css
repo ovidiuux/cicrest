@@ -1,0 +1,414 @@
+.App {
+  font-family: Bebas Neue;
+  color: #fff;
+  background-color:#000;
+  
+  width: 100%;
+
+}
+
+.thebooks h1 {
+ line-height: 1.5rem;
+}
+
+h1 {
+  font-size: 2.4rem!important;
+  letter-spacing: 0.35rem;
+  font-weight: 100;
+}
+
+.thebooks .hdbg {
+  display: flex;
+  flex-direction: column!important;
+  justify-content: center;
+  align-items: center;
+}
+
+.tableel {
+  position: relative;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+  z-index: 1;
+  display: flex;
+}
+.tableela {
+     float: none;
+    height: 90%;
+    margin: 0 0.25%;
+    display: inline-block;
+    zoom: 1;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.tableel:hover {}
+.tableela h1{
+  font-size: 3rem!important;
+}
+.year {
+  color:lightgray;
+  font-size: 10rem!important;
+}
+.tableela {
+  display: flex;
+  flex-direction: column;
+  width: 150px;
+}
+
+
+.header, .footer {
+  position: fixed;
+  right:0;
+  left:0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
+.footer {
+  bottom:0;
+}
+h1 {
+  text-align: center;
+}
+.headerNav {
+  display: flex;
+  align-items: center;
+  font-family: Montserrat;
+}
+
+.jh1 {
+  display: flex;
+  align-items:center;
+  justify-content: right;
+}
+.App {
+  padding-bottom: 10rem;
+}
+.headerNav a {
+  color:gainsboro;
+  padding-left: 0.65rem;
+  padding-right: 0.65rem;
+  text-transform: uppercase;
+}
+
+.footer {
+  padding-bottom: 0.25rem;
+}
+.isLoading {
+  transition: all 1s ease;
+  display: flex;
+  font-weight: lighter!important;
+  justify-content: center;
+  align-items: center;
+  font-family: Montserrat;
+  color:#fff;
+  position: fixed;
+  top:0;
+  z-index: 1000000;
+  bottom:0;
+  right: 0;
+  left: 0;
+  background-color: #000;
+}
+.footer h3 {
+  cursor: default;
+  font-weight: lighter!important;
+  font-family: Montserrat;
+  font-size:1.0rem;
+  color:gainsboro;
+}
+
+.footerc, .footerd {
+  display: flex;
+  align-content: center;
+}
+
+.headerNav a {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  padding-bottom: 0.5rem;
+  padding-bottom: 0.5rem;
+  transition: color 0.30s ease-out;
+}
+.active {
+ color:#fff; 
+}
+.currentTime {
+  cursor: default;
+}
+
+.headerNav a:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: -0.10rem;
+  left: 0;
+  background-color: #ffffff;
+  transform-origin: bottom right;
+  transition: transform 0.30s ease-out;
+}
+.headerNav a:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.active {
+  color: #fff!important;
+}
+
+.headerNav a:hover {
+ color: #fff!important;
+}
+a {
+  text-decoration: none;
+}
+.footerc {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: calc(100% + 1px);
+}
+.footerc svg {
+  margin-right: 0.50rem;
+}
+.footerd {
+  justify-content: flex-end;
+}
+.header {
+  top:0;
+}
+
+.MainX {
+  padding-top: 7rem;
+}
+.hdbg {
+  border-radius: 5rem;
+  position: relative;
+  width: 100%;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  display: flex;
+  justify-content: center;
+}
+
+.flexText {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: baseline;
+}
+
+
+.bgimg { 
+  padding-top: 0rem;
+  background-image: url("./stefanLandscape.png");
+  background-position: 50% 10%;
+  background-size: contain;
+  filter: blur(4.5rem);
+  height: 10rem;
+  position: absolute;
+  top:0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.aftxt {
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.MainX a {
+  color:rgb(212, 166, 166);
+  font-family: Montserrat;
+  text-decoration: underline;
+  z-index: 100;
+}
+
+.MainX a:hover{
+  color: #fff;
+}
+
+.header {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  transition: all 0.23s ;
+}
+.activeScrolled {
+  background-color: #000;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+} 
+
+.img {
+ background-image: url("./stefanLandscape.png");
+ height: 260px;
+ width: auto;
+ background-position: 50% 10%;
+ background-size: cover;
+ background-repeat: no-repeat;
+ top:1px;
+ border-radius: 0rem;
+}
+
+
+.footer {
+  z-index: 1;
+  background-color: transparent!important;
+}
+.timeRead {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  line-height: 0;
+  padding: 0;
+  margin: 0;
+}
+.footer{
+  padding-top: 2rem;
+  background:linear-gradient(0deg, black, transparent)
+}
+.timeRead svg {
+  margin-right: 0.50rem;
+}
+.header {
+  z-index: 5;
+}
+.aftxt h1 {
+  font-size: 0.9rem!important;
+  text-align: start;
+  font-family:  Montserrat;
+  letter-spacing: 0;
+  font-weight: 100;
+  line-height: 2;
+}
+.biblo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-left: 2rem;
+  font-family: Montserrat;
+  padding-right: 2rem;
+}
+.biblo h1 {
+  letter-spacing: 0!important;
+  font-size: 1rem!important;
+  text-align: start;
+}
+/* MOBILE CSS */
+@media (max-width:1025px)  {
+  .biblo h1 {
+    font-size: 1rem!important;
+  }
+  .isLoading h1 {
+    font-size: 1.35rem!important;
+  }
+  .tableel {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .activeScrolled {
+    background-color: transparent;
+  }
+  .MainX {
+    padding-top: 2.5rem;
+  }
+  .img {
+    height: 210px;
+  }
+  .header {
+    padding-top:1.5rem;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  .headerNavig {
+    position: relative;
+  }
+  .footerc {
+    opacity: 0;
+  }
+  .jh1 {
+    display: none;
+  }
+}
+
+
+
+
+:root {
+  --srcLand:"";
+}
+
+.infoPage .img{
+  width: 100%;
+  height: 30rem;
+  background-image: url("./eu.jpg");
+  background-size: auto;
+  background-position: 50% 25%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+ 
+}
+.infoPage h1{
+  font-size: 0.9rem!important;
+}
+.flex {
+  display: flex;
+  flex-direction: column;
+  padding-top: 2.5rem;
+  justify-content: center;
+  align-items: center;
+}
+.infoO {
+  width: 50%;
+}
+.infoPage .bgimg {
+  background-image: url('./eu.jpg');
+  background-size: cover;
+  width: 100%;
+  filter: blur(4rem);
+
+}
+.infoPage .aftxt {
+  display: flex;
+  flex-direction: column;
+}
+/* IMG PENTRU LAND/PORT DEVICES */
+@media screen and (orientation:portrait) {
+  .img{
+    background-image: url("./stefanLandscape.png")
+  }
+}
+@media screen and (orientation:landscape) {
+  .img{
+    background-image: url("./stefanLandscape.png")
+  }
+}
+
+
+.thebooks h1 {
+  font-family: Montserrat;
+  text-align: start;
+  text-transform: none;
+  font-size: 0.9rem!important;
+  letter-spacing: 0.1px;
+  background-color: #3;
+}
+
+.thebooks {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
